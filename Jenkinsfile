@@ -20,7 +20,7 @@ pipeline {
         stage('analyze') {
             steps {
                 writeFile file: "anchore_images", text: "docker.io/freemanpolys/jenkins-anchore:${BUILD_ID}"
-                anchore name: 'anchore_images',bailOnFail: false, bailOnPluginFail: false
+                anchore name: 'anchore_images',bailOnFail: true, bailOnPluginFail: true
             }
         }
     }
