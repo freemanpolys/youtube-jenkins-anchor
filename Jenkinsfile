@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        IMAGE = 'busybox'
+        IMAGE = 'debian:10'
     }
     stages {
         stage('analyze') {
