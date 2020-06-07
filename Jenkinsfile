@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        IMAGE = 'busybox'
+        IMAGE = 'gcr.io/distroless/base-debian10'
     }
     stages {
         stage('analyze') {
