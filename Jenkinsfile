@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        IMAGE = 'alpine:3.11'
+        IMAGE = 'gcr.io/distroless/nodejs'
     }
     stages {
         stage('analyze') {
