@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        IMAGE = 'gcr.io/distroless/python3'
+        IMAGE = 'python:alpine3.12'
     }
     stages {
         stage('analyze') {
