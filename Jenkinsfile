@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        IMAGE = 'openjdk:11.0.7'
+        IMAGE = 'gcr.io/distroless/python3'
     }
     stages {
         stage('analyze') {
