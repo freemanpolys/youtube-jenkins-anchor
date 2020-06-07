@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        IMAGE = 'debian:10'
+        IMAGE = 'openjdk:11.0.7'
     }
     stages {
         stage('analyze') {
