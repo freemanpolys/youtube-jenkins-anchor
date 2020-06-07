@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        IMAGE = 'scratch'
+        IMAGE = 'registry.labs:5000/scratch:latest'
     }
     stages {
         stage('analyze') {
