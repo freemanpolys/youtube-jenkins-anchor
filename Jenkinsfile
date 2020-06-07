@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        IMAGE = 'alpine'
+        IMAGE = 'busybox'
     }
     stages {
         stage('analyze') {
