@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        IMAGE = 'busybox'
+        IMAGE = 'gcr.io/distroless/java:11'
     }
     stages {
         stage('analyze') {
