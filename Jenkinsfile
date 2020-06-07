@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        IMAGE = 'scratch'
+        IMAGE = 'gcr.io/distroless/base'
     }
     stages {
         stage('analyze') {
